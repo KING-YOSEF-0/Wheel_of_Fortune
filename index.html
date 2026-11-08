@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheel of Fortune - By KING_YOSEF_</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>🎡 Custom Spinner</h1>
+        <p class="credits">Created by <strong>KING_YOSEF_</strong></p>
+    </header>
+
+    <main class="container">
+        <!-- Left Side: The Wheel -->
+        <div class="wheel-section">
+            <div class="wheel-container">
+                <div class="pointer"></div>
+                <canvas id="wheelCanvas" width="500" height="500"></canvas>
+                <button id="spinBtn" class="spin-button">SPIN</button>
+            </div>
+        </div>
+
+        <!-- Right Side: Controls & Results -->
+        <div class="controls-section">
+            <div class="panel">
+                <h2>Entries</h2>
+                <p class="hint">Put each name on a new line</p>
+                <textarea id="entriesInput" placeholder="Enter names here..."></textarea>
+                <button id="updateBtn" class="action-btn">Update Wheel</button>
+            </div>
+
+            <div class="panel results-panel">
+                <h2>Winner!</h2>
+                <div id="winnerDisplay" class="winner-box">Ready to spin...</div>
+                <h3>Past Results:</h3>
+                <ul id="historyList"></ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
